@@ -2,35 +2,25 @@
 <html>
 
 <head>
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>FindiX Studio|寻未工作室</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <!-- stylesheet -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/style.css" rel="stylesheet" media="screen" type="text/css" />
-    <link href="./css/normalize.css" rel="stylesheet" media="screen">
-
-    <!-- javascript -->
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-
-    <script src="js/prefixfree.min.js"></script>
-    <script src="js/modernizr.js"></script>
-
     <!-- icon -->
     <link rel="icon" href="http://www.find1x.com/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="http://www.find1x.com/favicon.ico" type="image/x-icon" />
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
 	<script src="../../assets/js/html5shiv.js"></script>
 	<script src="../../assets/js/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 
 <body>
@@ -51,7 +41,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="/">主页</a>
+                    <a href="/">搜索</a>
                 </li>
                 <li>
                     <a href="http://zhan.renren.com/findix">小站</a>
@@ -92,14 +82,7 @@
             <div class="col-md-3"></div>
             <div class="col-md-6" align="center">
                 <div>
-                    <div class="foo">
-                        <span class="letter" data-letter="F">F</span>
-                        <span class="letter" data-letter="i">i</span>
-                        <span class="letter" data-letter="n">n</span>
-                        <span class="letter" data-letter="d">d</span>
-                        <span class="letter" data-letter="i">i</span>
-                        <span class="letter" data-letter="X">X</span>
-                    </div>
+                    <img src="./img/ff.png" alt="FindiX" width="300" />
                     <br>
                     <br>
                 </div>
@@ -107,8 +90,8 @@
                 <input class="form-control input-lg" type="text" id='voice' x-webkit-speech="x-webkit-speech" lang="zh-CN" onwebkitspeechchange="searchG()" onkeydown="if(event.keyCode==13){searchG();}" />
                 <br>
                 <br>
-                <input class="btn btn-info" id='submit' type="submit" value="Google Search" onclick="searchG()" />
-                <input class="btn btn-info" id='submit' type="submit" value="Baidu Search" onclick="searchB()" />
+                <input class="btn btn-success" id='submit' type="submit" value="Google Search" onclick="searchG()" />
+                <input class="btn btn-primary" id='submit' type="submit" value="Baidu Search" onclick="searchB()" />
                 <br>
                 <br>
                 <p style="color:grey">
