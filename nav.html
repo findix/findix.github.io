@@ -1,46 +1,80 @@
-<!-- Brand and toggle get grouped for better mobile display -->
-<div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand">FindiX Studio</a>
-</div>
-
-<!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
+<header>
+    <span class="logo">
+        <img width="100px" height="100px" src="img/icon.png" alt="">
+    </span>
+    <span class="icon-list2"></span>
+    <span class="icon-search2"></span>
+    <input placeholder="Search.." type="text" id="voice" x-webkit-speech="x-webkit-speech" lang="zh-CN" onwebkitspeechchange="searchG()" onkeydown="if(event.keyCode==13){searchG();}" />
+    <div class="foo">
+        <span class="letter" data-letter="F">F</span>
+        <span class="letter" data-letter="i">i</span>
+        <span class="letter" data-letter="n">n</span>
+        <span class="letter" data-letter="d">d</span>
+        <span class="letter" data-letter="i">i</span>
+        <span class="letter" data-letter="X">X</span>
+    </div>
+    <script type="text/javascript">
+    function searchG() {
+        var n = document.getElementById("voice").value;
+        if (n != "") {
+            window.location.href = "https://www.google.com.hk/#newwindow=1&q=" + n;
+        }
+    }
+    </script>
+</header>
+<nav>
+    <ul>
         <li>
-            <a href="/">主页</a>
+            <a href="/">
+                <span class="icon-house"></span>
+                <h1>Home</h1>
+            </a>
         </li>
         <li>
-            <a href="http://zhan.renren.com/findix">小站</a>
+            <a href="http://findix.jd-app.com/">
+                <span class="icon-archive"></span>
+                <h1>Blog</h1>
+            </a>
         </li>
         <li>
-            <a href="http://findix.jd-app.com/">博客</a>
+            <a href="works.html">
+                <span class="icon-trophy"></span>
+                <h1>Work</h1>
+            </a>
         </li>
         <li>
-            <a href="./works.html">项目</a>
+            <a href="http://findix.pp.163.com/">
+                <span class="icon-pictures"></span>
+                <h1>Photos</h1>
+            </a>
         </li>
         <li>
-            <a href="http://findix.pp.163.com/">摄影</a>
-        </li>
-        <li>
-            <a href="http://github.com/findix">Github</a>
-        </li>
-        <li>
-            <a href="http://www.litpo.com">LITPO</a>
-        </li>
-        <li>
-            <a href="./resume.html">简历</a>
+            <a href="resume.html">
+                <span class="icon-location3" id="about"></span>
+                <h1>About</h1>
+            </a>
         </li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-        <li>
-            <a href="http://mail.find1x.com/" id="mail" class="navbar-brand">邮箱</a>
-        </li>
-    </ul>
-</div>
-<!-- /.navbar-collapse -->
+</nav>
+<script>
+function searchG() {
+    var n = document.getElementById("voice").value;
+    if (n != "") {
+        window.location.href = "https://www.google.com.hk/#newwindow=1&q=" + n;
+    }
+}
+(function($) {
+    $("header .icon-list2").click(function() {
+        if ($("nav").css("visibility") != "hidden") {
+            $("nav").slideToggle();
+        } else {
+            $("nav").slideDown();
+            if ($("nav").css("visibility") == "hidden") {
+                $("nav").css("visibility", "visible");
+            } else {
+                $("nav").css("visibility", "hidden");
+            }
+        }
+    });
+}(jQuery));
+</script>
