@@ -4,7 +4,23 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family:"微软雅黑","Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+    font-family:"微软雅黑", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:"微软雅黑", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+}
+.think h1, .think h2 {
+    font-family:"微软雅黑", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+    margin: auto;
+    opacity: 0.5;
+    font-weight: 900;
+    text-shadow: -1px 0px 1px rgba(255, 255, 255, .8), 1px 0px 1px #00B4F1;
+}
+.think h1 {
+    font-size: 5em;
+}
+.think h2 {
+    font-size: 4em;
 }
 nav, header {
     opacity: 0.8
@@ -15,20 +31,12 @@ input.form-control {
 .container {
     margin-top: 120px;
 }
-@media (min-width: 768px) {
-    .container {
-        width: 640px;
+.left_container {
+    margin-top: 120px;
+    margin-left: 20px;
+}
+@media (min-width: 860px) {
+    .left_container {
+        margin-left: 150px;
     }
 }
-@media (min-width: 1200px) {
-    .container {
-        width: 768px;
-    }
-}
-@media (min-width: 1400px) {
-    .container {
-        width: 960px;
-    }
-}
-
-
