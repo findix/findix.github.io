@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>FindiX Studio|寻未工作室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- stylesheet -->
+    <link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/theme.css" rel="stylesheet" media="screen">
+    <link href="./css/nav.css" rel="stylesheet" media="screen" />
+    <link href="./css/markdown.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    <!-- icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="nav"></div>
+    <!-- content -->
+    <div class="left_container">
+        <article class="markdown-body">
+            <h2>
+                我
+            </h2>
+
+            <p>
+                一只
+                <br>挣扎着边毕业边创业的大四狗
+                <br>小乐</p>
+
+            <p>
+                一切皆为
+                <a href="http://www.fantablade.com">幻刃</a>
+            </p>
+
+            <p>
+                拼命温柔的对待世界
+                <br>希望也被世界温柔的对待</p>
+
+            <p>
+                寻找真实
+                <br>勿忘初心，方的始终。</p>
+
+            <h2>
+                兴趣
+            </h2>
+
+            <p>（排名不分先后）</p>
+
+            <ul>
+                <li>书</li>
+                <li>
+                    <a href="http://www.findix.cn">CS</a>
+                </li>
+                <li>
+                    <a href="http://findix.pp.163.com">摄影</a>
+                    /延时摄影/电影制作
+                </li>
+                <li>科普性的量子力学（支持哥本哈根解释）</li>
+                <li>消费电子产品（目前大概也只有Google Glass以及各种穿戴类产品还有点期待）</li>
+                <li>UI/UX设计</li>
+                <li>
+                    <a href="http://pixiv.me/findix">手绘</a>
+                </li>
+                <li>乐器（钢琴）/电声耳机发烧</li>
+                <li>轻小说/美剧</li>
+                <li>金融/证券（经济只看书，感兴趣谈不上）</li>
+                <li>视频制作（Ae绝对是可玩性最高的软件，但是太耗绳命啊。）</li>
+                <li>旅行/美食</li>
+                <li>LAMY/机械键盘（为什么这两放一起……额……勉强都是输入设备吧）</li>
+                <li>分形</li>
+                <li>汉语言文学</li>
+                <li>创业/不安定</li>
+                <li>女生</li>
+                <li>
+                    <a href="http://www.zhihu.com/people/findix">知乎</a>
+                </li>
+            </ul>
+
+            <h2>
+                联系我
+            </h2>
+        </article>
+                    <ul class="social_link social_link--social">
+
+                <!-- Weibo -->
+                <li class="social_link__item">
+                    <a href="http://weibo.com/gouxiaole" title="@凤翔FindiX 的微博" target="_blank"> <i class="social fa fa-weibo"></i>
+                        <span class="label">Weibo</span>
+                    </a>
+                </li>
+
+                <!-- Github -->
+                <li class="social_link__item">
+                    <a href="https://github.com/findix" title="@findix 的 Github" target="_blank"> <i class="social fa fa-github"></i>
+                        <span class="label">Github</span>
+                    </a>
+                </li>
+
+                <!-- Twitter -->
+                <li class="social_link__item">
+                    <a href="https://twitter.com/Find1X" title="@凤翔FindiX" target="_blank">
+                        <i class="social fa fa-twitter"></i>
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
+
+                <!-- Google Plus -->
+                <li class="social_link__item">
+                    <a href="https://plus.google.com/+%E5%87%A4%E7%BF%94/" rel="author" title="Google+" target="_blank">
+                        <i class="social fa fa-google-plus-square"></i>
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
+
+                <!-- Email -->
+                <li class="social_link__item">
+                    <a href="mailto:fengxiang@find1x.com" title="邮件联系我">
+                        <i class="social fa fa-envelope"></i>
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+
+            </ul>
+    </div>
+
+    <!-- javascript -->
+    <script src='./js/jquery.js'></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/modernizr.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("#nav").load("nav.html", function() {
+            $("li:eq(4)").attr("class", "current");
+        });
+    });
+    </script>
+</body>
+
+</html>
