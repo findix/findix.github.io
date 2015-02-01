@@ -12,8 +12,8 @@
     <!-- stylesheet -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="./css/theme.css" rel="stylesheet" media="screen">
-    <link href="./css/nav.css" rel="stylesheet" media="screen"/>
-    <link href="./css/normalize.css" rel="stylesheet" media="screen"/>
+    <link href="./css/nav.css" rel="stylesheet" media="screen" />
+    <link href="./css/normalize.css" rel="stylesheet" media="screen" />
 
 
     <!-- icon -->
@@ -35,16 +35,25 @@
     <div class="container">
     </div>
     <!-- javascript -->
-    <script src='./js/jquery.js'></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/prefixfree.min.js"></script>
-    <script src="./js/modernizr.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="http://cdn.bootcss.com/modernizr/2.8.3/modernizr.min.js"></script>
     <script>
     $(document).ready(function() {
         $("#nav").load("nav.html", function() {
             $("li:eq(0)").attr("class", "current");
         });
     });
+    </script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?d3b8254f9b730062ef59206e21db9890";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
     </script>
 </body>
 
